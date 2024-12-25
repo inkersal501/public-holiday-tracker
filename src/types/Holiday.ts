@@ -7,3 +7,9 @@ export interface Holiday {
     Type: string,
     Comments: string
 }
+
+export interface MessageResponse {
+    message: string;
+}
+
+export type FetchHolidaysResponse = Holiday[] | MessageResponse;
